@@ -1,0 +1,3 @@
+verilog work "SwitcLED.v"
+verilog work "tb_SwitchLED.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,23 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/susu/Documents/mygithub/FPGA/LEDwater/tb_LEDwater_isim_beh.exe -prj C:/Users/susu/Documents/mygithub/FPGA/LEDwater/tb_LEDwater_beh.prj work.tb_LEDwater work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+WARNING:Simulator:1010 - One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Analyzing Verilog file "C:/Users/susu/Documents/mygithub/FPGA/LEDwater/LEDwater.v" into library work
+Analyzing Verilog file "C:/Users/susu/Documents/mygithub/FPGA/LEDwater/tb_LEDwater.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 159132 KB
+Fuse CPU Usage: 656 ms
+Compiling module clock_div
+Compiling module LEDwater
+Compiling module tb_LEDwater
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 Verilog Units
+Built simulation executable C:/Users/susu/Documents/mygithub/FPGA/LEDwater/tb_LEDwater_isim_beh.exe
+Fuse Memory Usage: 165632 KB
+Fuse CPU Usage: 749 ms

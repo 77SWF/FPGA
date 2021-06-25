@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Feb 28 17:58:27 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LEDOut<7>" LOCATE = SITE "F9" LEVEL 1;
+COMP "SlideSwitch<0>" LOCATE = SITE "L13" LEVEL 1;
+COMP "SlideSwitch<1>" LOCATE = SITE "L14" LEVEL 1;
+COMP "SlideSwitch<2>" LOCATE = SITE "H18" LEVEL 1;
+COMP "SlideSwitch<3>" LOCATE = SITE "N17" LEVEL 1;
+COMP "LEDOut<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "LEDOut<1>" LOCATE = SITE "E12" LEVEL 1;
+COMP "LEDOut<2>" LOCATE = SITE "E11" LEVEL 1;
+COMP "LEDOut<3>" LOCATE = SITE "F11" LEVEL 1;
+COMP "LEDOut<4>" LOCATE = SITE "C11" LEVEL 1;
+COMP "LEDOut<5>" LOCATE = SITE "D11" LEVEL 1;
+COMP "LEDOut<6>" LOCATE = SITE "E9" LEVEL 1;
+SCHEMATIC END;
+

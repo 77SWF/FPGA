@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\susu\Documents\mygithub\FPGA\SwitchLED\impact.xsl
+OUTFILE=C:\Users\susu\Documents\mygithub\FPGA\SwitchLED\impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=C:\Users\susu\Documents\mygithub\FPGA\SwitchLED
+LICENSE=iMPACT
+USER_INFO=iMPACT

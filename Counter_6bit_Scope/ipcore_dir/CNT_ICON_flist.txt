@@ -1,0 +1,16 @@
+# Output products list for <CNT_ICON>
+CNT_ICON.asy
+CNT_ICON.constraints\CNT_ICON.ucf
+CNT_ICON.constraints\CNT_ICON.xdc
+CNT_ICON.gise
+CNT_ICON.ngc
+CNT_ICON.sym
+CNT_ICON.ucf
+CNT_ICON.v
+CNT_ICON.veo
+CNT_ICON.xco
+CNT_ICON.xdc
+CNT_ICON.xise
+CNT_ICON_flist.txt
+CNT_ICON_readme.txt
+CNT_ICON_xmdf.tcl

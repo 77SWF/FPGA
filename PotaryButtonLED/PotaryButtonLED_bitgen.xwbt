@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\susu\Documents\mygithub\FPGA\PotaryButtonLED\PotaryButtonLED.ncd
+OUTFILE=C:\Users\susu\Documents\mygithub\FPGA\PotaryButtonLED\PotaryButtonLED.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\susu\Documents\mygithub\FPGA\PotaryButtonLED
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/CNT_VIO.v"
+verilog work "ipcore_dir/CNT_ILA.v"
+verilog work "ipcore_dir/CNT_ICON.v"
+verilog work "counter_scope.v"
+verilog work "tb_counter_scope.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

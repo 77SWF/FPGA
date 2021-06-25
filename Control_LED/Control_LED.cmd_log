@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/susu/Documents/mygithub/FPGA/Control_LED/Control_LED.xst" -ofn "C:/Users/susu/Documents/mygithub/FPGA/Control_LED/Control_LED.syr" 

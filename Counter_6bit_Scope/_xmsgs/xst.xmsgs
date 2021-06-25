@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;counter_scope.v&quot; line 63 </arg>Connection to input port &apos;<arg fmt="%s" index="2">DATA</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;counter_scope.v&quot; line 64 </arg>Connection to input port &apos;<arg fmt="%s" index="2">TRIG0</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;counter_scope.v&quot; line 74 </arg>Connection to input port &apos;<arg fmt="%s" index="2">ASYNC_IN</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">ipcore_dir/CNT_ICON.v</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">CNT_ICON</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">ipcore_dir/CNT_ILA.v</arg>&quot; line <arg fmt="%d" index="2">60</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">CNT_ILA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">ipcore_dir/CNT_VIO.v</arg>&quot; line <arg fmt="%d" index="2">72</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">CNT_VIO</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">trig&lt;5:4&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">rst_L</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">dir_H</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">VLED&lt;5:4&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="new" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">m_icon</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="new" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">m_icon</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="new" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">m_ila</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="new" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">m_ila</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="new" >Invalid property &quot;<arg fmt="%s" index="1">SYN_BLACK_BOX</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">YourInstanceName</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="616" delta="new" >Invalid property &quot;<arg fmt="%s" index="1">SYN_NOPRUNE</arg> <arg fmt="%s" index="2">1</arg>&quot;: Did not attach to <arg fmt="%s" index="3">YourInstanceName</arg>.
+</msg>
+
+</messages>
+

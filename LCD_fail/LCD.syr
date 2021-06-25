@@ -1,0 +1,608 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.45 secs
+ 
+--> Reading design: LCD.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LCD.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LCD"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : LCD
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "LCD.v" in library work
+WARNING:HDLCompilers:299 - "LCD.v" line 42 Too many digits specified in binary constant
+WARNING:HDLCompilers:299 - "LCD.v" line 103 Too many digits specified in binary constant
+Module <LCD> compiled
+No errors in compilation
+Analysis of file <"LCD.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <LCD> in library <work> with parameters.
+	BETWEEN_40US = "1000000"
+	CLEAR_DISPLAY = "00000010000"
+	CLEAR_WAIT_1_64MS = "0000100000"
+	DISPLAY_DONE = "10000000000"
+	DISPLAY_IDLE = "00000000001"
+	DISPLAY_ON_OFF = "00000001000"
+	ENTRY_MODE_SET = "00000000100"
+	FUNCTION_SET = "00000000010"
+	INIT_DONE = "10000000000"
+	INIT_IDLE = "00000000001"
+	LOWER_4BIT = "0010000"
+	LOWER_ENABLE_230NS = "0100000"
+	SET_DD_RAM_ADDRESS = "00001000000"
+	TEXT_IDLE = "0000001"
+	UPPER_4BIT = "0000010"
+	UPPER_ENABLE_230NS = "0000100"
+	UP_TO_LOW_1US = "0001000"
+	WAIT_100UM = "0000100000"
+	WAIT_15MS = "00000000010"
+	WAIT_40UM_1 = "00010000000"
+	WAIT_40UM_2 = "01000000000"
+	WAIT_40US_TO_LINE_2 = "00100000000"
+	WAIT_4_1MS = "00000001000"
+	WRITE_1 = "00000000100"
+	WRITE_2 = "00000010000"
+	WRITE_3 = "00001000000"
+	WRITE_4 = "00100000000"
+	WRITE_LINE_1 = "00010000000"
+	WRITE_LINE_2 = "01000000000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <LCD>.
+	BETWEEN_40US = 7'b1000000
+	CLEAR_DISPLAY = 11'b00000010000
+	CLEAR_WAIT_1_64MS = 10'b0000100000
+	DISPLAY_DONE = 11'b10000000000
+	DISPLAY_IDLE = 11'b00000000001
+	DISPLAY_ON_OFF = 11'b00000001000
+	ENTRY_MODE_SET = 11'b00000000100
+	FUNCTION_SET = 11'b00000000010
+	INIT_DONE = 11'b10000000000
+	INIT_IDLE = 11'b00000000001
+	LOWER_4BIT = 7'b0010000
+	LOWER_ENABLE_230NS = 7'b0100000
+	SET_DD_RAM_ADDRESS = 11'b00001000000
+	TEXT_IDLE = 7'b0000001
+	UPPER_4BIT = 7'b0000010
+	UPPER_ENABLE_230NS = 7'b0000100
+	UP_TO_LOW_1US = 7'b0001000
+	WAIT_100UM = 10'b0000100000
+	WAIT_15MS = 11'b00000000010
+	WAIT_40UM_1 = 11'b00010000000
+	WAIT_40UM_2 = 11'b01000000000
+	WAIT_40US_TO_LINE_2 = 11'b00100000000
+	WAIT_4_1MS = 11'b00000001000
+	WRITE_1 = 11'b00000000100
+	WRITE_2 = 11'b00000010000
+	WRITE_3 = 11'b00001000000
+	WRITE_4 = 11'b00100000000
+	WRITE_LINE_1 = 11'b00010000000
+	WRITE_LINE_2 = 11'b01000000000
+WARNING:Xst:2725 - "LCD.v" line 68: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "LCD.v" line 208: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "LCD.v" line 466: Size mismatch between case item and case selector.
+Module <LCD> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <init_begin> in unit <LCD> has a constant value of 1 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <LCD>.
+    Related source file is "LCD.v".
+WARNING:Xst:1780 - Signal <display_done> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State 00001000000 is never reached in FSM <display_state>.
+INFO:Xst:1799 - State 00010000000 is never reached in FSM <display_state>.
+INFO:Xst:1799 - State 00100000000 is never reached in FSM <display_state>.
+INFO:Xst:1799 - State 01000000000 is never reached in FSM <display_state>.
+INFO:Xst:1799 - State 10000000000 is never reached in FSM <display_state>.
+    Found finite state machine <FSM_0> for signal <init_state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 20                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 12                                             |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000000001                                    |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <display_state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000000001                                    |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <text_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000001                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x8-bit ROM for signal <text_line_2>.
+    Found 16x8-bit ROM for signal <text_line_1>.
+    Found 8-bit register for signal <character_8bit>.
+    Found 4-bit register for signal <cnt_line_1>.
+    Found 4-bit adder for signal <cnt_line_1$addsub0000> created at line 516.
+    Found 4-bit register for signal <cnt_line_2>.
+    Found 4-bit adder for signal <cnt_line_2$addsub0000> created at line 559.
+    Found 11-bit register for signal <display_cnt>.
+    Found 11-bit adder for signal <display_cnt$share0000> created at line 367.
+    Found 11-bit comparator lessequal for signal <display_state$cmp_le0000> created at line 397.
+    Found 4-bit comparator less for signal <display_state$cmp_lt0000> created at line 513.
+    Found 4-bit comparator less for signal <display_state$cmp_lt0001> created at line 556.
+    Found 20-bit register for signal <init_cnt>.
+    Found 20-bit adder for signal <init_cnt$share0000> created at line 132.
+    Found 1-bit register for signal <init_done>.
+    Found 20-bit comparator less for signal <init_state$cmp_lt0000> created at line 148.
+    Found 20-bit comparator less for signal <init_state$cmp_lt0001> created at line 165.
+    Found 20-bit comparator less for signal <init_state$cmp_lt0002> created at line 180.
+    Found 20-bit comparator less for signal <init_state$cmp_lt0003> created at line 211.
+    Found 20-bit comparator less for signal <init_state$cmp_lt0004> created at line 242.
+    Found 1-bit register for signal <LCD_E_>.
+    Found 1-bit register for signal <LCD_E_init>.
+    Found 1-bit register for signal <LCD_RS_>.
+    Found 4-bit register for signal <SF_D_>.
+    Found 4-bit register for signal <SF_D_init>.
+    Found 11-bit register for signal <text_cnt>.
+    Found 11-bit adder for signal <text_cnt$share0000> created at line 619.
+    Found 1-bit register for signal <text_ctrl>.
+    Found 11-bit comparator lessequal for signal <text_state$cmp_le0000> created at line 732.
+    Found 11-bit comparator less for signal <text_state$cmp_lt0000> created at line 642.
+    Found 11-bit comparator less for signal <text_state$cmp_lt0001> created at line 661.
+    Found 11-bit comparator less for signal <text_state$cmp_lt0002> created at line 679.
+    Summary:
+	inferred   3 Finite State Machine(s).
+	inferred   2 ROM(s).
+	inferred  71 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+Unit <LCD> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 2
+# Adders/Subtractors                                   : 5
+ 11-bit adder                                          : 2
+ 20-bit adder                                          : 1
+ 4-bit adder                                           : 2
+# Registers                                            : 13
+ 1-bit register                                        : 5
+ 11-bit register                                       : 2
+ 20-bit register                                       : 1
+ 4-bit register                                        : 4
+ 8-bit register                                        : 1
+# Comparators                                          : 12
+ 11-bit comparator less                                : 3
+ 11-bit comparator lessequal                           : 2
+ 20-bit comparator less                                : 5
+ 4-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <text_state/FSM> on signal <text_state[1:7]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ 0000001 | 0000001
+ 0000010 | 0000010
+ 0000100 | 0000100
+ 0001000 | 0001000
+ 0010000 | 0010000
+ 0100000 | 0100000
+ 1000000 | 1000000
+---------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <display_state/FSM> on signal <display_state[1:3]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ 00000000001 | 000
+ 00000000010 | 001
+ 00000000100 | 011
+ 00000001000 | 010
+ 00000010000 | 110
+ 00000100000 | 111
+ 00001000000 | unreached
+ 00010000000 | unreached
+ 00100000000 | unreached
+ 01000000000 | unreached
+ 10000000000 | unreached
+-------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <init_state/FSM> on signal <init_state[1:11]> with user encoding.
+----------------------------
+ State       | Encoding
+----------------------------
+ 00000000001 | 00000000001
+ 00000000010 | 00000000010
+ 00000000100 | 00000000100
+ 00000001000 | 00000001000
+ 00000010000 | 00000010000
+ 00000100000 | 00000100000
+ 00001000000 | 00001000000
+ 00010000000 | 00010000000
+ 00100000000 | 00100000000
+ 01000000000 | 01000000000
+ 10000000000 | 10000000000
+----------------------------
+WARNING:Xst:1710 - FF/Latch <SF_D_init_2> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SF_D_init_3> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <character_8bit_4> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <character_8bit_6> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <character_8bit_7> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_RS_> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# Adders/Subtractors                                   : 3
+ 11-bit adder                                          : 2
+ 20-bit adder                                          : 1
+# Registers                                            : 71
+ Flip-Flops                                            : 71
+# Comparators                                          : 12
+ 11-bit comparator less                                : 3
+ 11-bit comparator lessequal                           : 2
+ 20-bit comparator less                                : 5
+ 4-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <SF_D_init_2> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SF_D_init_3> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_line_1_0> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_line_1_1> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_line_1_2> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_line_1_3> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_line_2_0> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_line_2_1> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_line_2_2> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_line_2_3> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <character_8bit_4> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <character_8bit_6> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <character_8bit_7> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LCD_RS_> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <LCD> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block LCD, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 78
+ Flip-Flops                                            : 78
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : LCD.ngr
+Top Level Output File Name         : LCD
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 332
+#      GND                         : 1
+#      INV                         : 12
+#      LUT1                        : 50
+#      LUT2                        : 16
+#      LUT2_D                      : 3
+#      LUT2_L                      : 1
+#      LUT3                        : 17
+#      LUT3_D                      : 3
+#      LUT4                        : 92
+#      LUT4_D                      : 7
+#      MUXCY                       : 86
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 42
+# FlipFlops/Latches                : 78
+#      FDE                         : 5
+#      FDR                         : 62
+#      FDRS                        : 9
+#      FDS                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      110  out of   4656     2%  
+ Number of Slice Flip Flops:             78  out of   9312     0%  
+ Number of 4 input LUTs:                201  out of   9312     2%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    232     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 78    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.769ns (Maximum Frequency: 128.717MHz)
+   Minimum input arrival time before clock: 4.385ns
+   Maximum output required time after clock: 7.645ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 7.769ns (frequency: 128.717MHz)
+  Total number of paths / destination ports: 3626 / 86
+-------------------------------------------------------------------------
+Delay:               7.769ns (Levels of Logic = 8)
+  Source:            init_cnt_4 (FF)
+  Destination:       init_cnt_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: init_cnt_4 to init_cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.591   0.883  init_cnt_4 (init_cnt_4)
+     LUT4:I0->O            1   0.704   0.000  Mcompar_init_state_cmp_lt0004_lut<1>3 (Mcompar_init_state_cmp_lt0004_lut<1>3)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_init_state_cmp_lt0004_cy<1>_2 (Mcompar_init_state_cmp_lt0004_cy<1>3)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_init_state_cmp_lt0004_cy<2>_2 (Mcompar_init_state_cmp_lt0004_cy<2>3)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_init_state_cmp_lt0004_cy<3>_2 (Mcompar_init_state_cmp_lt0004_cy<3>3)
+     MUXCY:CI->O           9   0.459   0.824  Mcompar_init_state_cmp_lt0004_cy<4>_2 (Mcompar_init_state_cmp_lt0004_cy<4>3)
+     LUT4:I3->O            2   0.704   0.482  init_cnt_mux0000<0>14 (init_cnt_mux0000<0>14)
+     LUT4_D:I2->O          9   0.704   0.824  init_cnt_mux0000<0>120 (N0)
+     LUT4:I3->O            1   0.704   0.000  init_cnt_mux0000<17>1 (init_cnt_mux0000<17>)
+     FDR:D                     0.308          init_cnt_2
+    ----------------------------------------
+    Total                      7.769ns (4.756ns logic, 3.013ns route)
+                                       (61.2% logic, 38.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 78 / 78
+-------------------------------------------------------------------------
+Offset:              4.385ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       character_8bit_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: reset to character_8bit_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            74   1.218   1.275  reset_IBUF (reset_IBUF)
+     INV:I->O              5   0.704   0.633  reset_inv1_INV_0 (reset_inv)
+     FDE:CE                    0.555          character_8bit_0
+    ----------------------------------------
+    Total                      4.385ns (2.477ns logic, 1.908ns route)
+                                       (56.5% logic, 43.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 23 / 5
+-------------------------------------------------------------------------
+Offset:              7.645ns (Levels of Logic = 3)
+  Source:            display_state_FSM_FFd3 (FF)
+  Destination:       LCD_E (PAD)
+  Source Clock:      clock rising
+
+  Data Path: display_state_FSM_FFd3 to LCD_E
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             15   0.591   1.192  display_state_FSM_FFd3 (display_state_FSM_FFd3)
+     LUT3:I0->O            4   0.704   0.762  LCD_E11 (N8)
+     LUT3:I0->O            1   0.704   0.420  SF_D<1>1 (SF_D_1_OBUF)
+     OBUF:I->O                 3.272          SF_D_1_OBUF (SF_D<1>)
+    ----------------------------------------
+    Total                      7.645ns (5.271ns logic, 2.374ns route)
+                                       (68.9% logic, 31.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.27 secs
+ 
+--> 
+
+Total memory usage is 234800 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   26 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

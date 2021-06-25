@@ -1,0 +1,28 @@
+Command line:
+   tb_LEDwater_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50330
+
+Sun Mar 21 13:02:05 2021
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 865.665 Meg
+
+ Total Signals          : 17
+ Total Nets             : 23
+ Total Signal Drivers   : 8
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 188
+
+ Total Simulation Time: 12.5469 sec
+
+ Current Memory Usage: 709.165 Meg
+
+Sun Mar 21 13:08:14 2021
+

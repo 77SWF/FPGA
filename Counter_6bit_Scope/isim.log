@@ -1,0 +1,21 @@
+ISim log file
+Running: C:\Users\susu\Documents\mygithub\FPGA\Counter_6bit_Scope\tb_counter_scope_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/susu/Documents/mygithub/FPGA/Counter_6bit_Scope/tb_counter_scope_isim_beh.wdb 
+ISim P.20131013 (signature 0x8ef4fb42)
+This is a Full version of ISim.
+WARNING: File "C:/Users/susu/Documents/mygithub/FPGA/Counter_6bit_Scope/counter_scope.v" Line 35.  For instance uut/m_ila/, width 4 of formal port DATA is not equal to width 6 of actual signal VLED.
+WARNING: File "C:/Users/susu/Documents/mygithub/FPGA/Counter_6bit_Scope/counter_scope.v" Line 57.  For instance uut/m_ila/, width 4 of formal port TRIG0 is not equal to width 6 of actual signal trig.
+WARNING: File "C:/Users/susu/Documents/mygithub/FPGA/Counter_6bit_Scope/counter_scope.v" Line 35.  For instance uut/YourInstanceName/, width 4 of formal port ASYNC_IN is not equal to width 6 of actual signal VLED.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x8ef4fb42)
+This is a Full version of ISim.
+WARNING: File "C:/Users/susu/Documents/mygithub/FPGA/Counter_6bit_Scope/counter_scope.v" Line 35.  For instance uut/m_ila/, width 4 of formal port DATA is not equal to width 6 of actual signal VLED.
+WARNING: File "C:/Users/susu/Documents/mygithub/FPGA/Counter_6bit_Scope/counter_scope.v" Line 57.  For instance uut/m_ila/, width 4 of formal port TRIG0 is not equal to width 6 of actual signal trig.
+WARNING: File "C:/Users/susu/Documents/mygithub/FPGA/Counter_6bit_Scope/counter_scope.v" Line 35.  For instance uut/YourInstanceName/, width 4 of formal port ASYNC_IN is not equal to width 6 of actual signal VLED.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

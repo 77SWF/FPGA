@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Users/susu/Documents/mygithub/FPGA/SwitchLED/SwitcLED.xst" -ofn "C:/Users/susu/Documents/mygithub/FPGA/SwitchLED/SwitcLED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SwitchLED.ucf -p xc3s500e-fg320-4 SwitcLED.ngc SwitcLED.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SwitcLED_map.ncd SwitcLED.ngd SwitcLED.pcf 
+par -w -intstyle ise -ol high -t 1 SwitcLED_map.ncd SwitcLED.ncd SwitcLED.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SwitcLED.twx SwitcLED.ncd -o SwitcLED.twr SwitcLED.pcf -ucf SwitchLED.ucf 
+bitgen -intstyle ise -f SwitcLED.ut SwitcLED.ncd 
+xst -intstyle ise -ifn "C:/Users/susu/Documents/mygithub/FPGA/SwitchLED/SwitcLED.xst" -ofn "C:/Users/susu/Documents/mygithub/FPGA/SwitchLED/SwitcLED.syr" 
+xst -intstyle ise -ifn "C:/Users/susu/Documents/mygithub/FPGA/SwitchLED/SwitcLED.xst" -ofn "C:/Users/susu/Documents/mygithub/FPGA/SwitchLED/SwitcLED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SwitchLED.ucf -p xc3s500e-fg320-4 SwitcLED.ngc SwitcLED.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SwitcLED_map.ncd SwitcLED.ngd SwitcLED.pcf 
+par -w -intstyle ise -ol high -t 1 SwitcLED_map.ncd SwitcLED.ncd SwitcLED.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SwitcLED.twx SwitcLED.ncd -o SwitcLED.twr SwitcLED.pcf -ucf SwitchLED.ucf 
+bitgen -intstyle ise -f SwitcLED.ut SwitcLED.ncd 
+xst -intstyle ise -ifn "C:/Users/susu/Documents/mygithub/FPGA/SwitchLED/SwitcLED.xst" -ofn "C:/Users/susu/Documents/mygithub/FPGA/SwitchLED/SwitcLED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SwitchLED.ucf -p xc3s500e-fg320-4 SwitcLED.ngc SwitcLED.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SwitcLED_map.ncd SwitcLED.ngd SwitcLED.pcf 
+par -w -intstyle ise -ol high -t 1 SwitcLED_map.ncd SwitcLED.ncd SwitcLED.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SwitcLED.twx SwitcLED.ncd -o SwitcLED.twr SwitcLED.pcf -ucf SwitchLED.ucf 
+bitgen -intstyle ise -f SwitcLED.ut SwitcLED.ncd 

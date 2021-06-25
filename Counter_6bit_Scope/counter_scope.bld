@@ -1,0 +1,40 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc counter_scope.ucf -p
+xc3s500e-fg320-4 counter_scope.ngc counter_scope.ngd
+
+Reading NGO file
+"C:/Users/susu/Documents/mygithub/FPGA/Counter_6bit_Scope/counter_scope.ngc" ...
+Loading design module "ipcore_dir/CNT_ICON.ngc"...
+Loading design module "ipcore_dir/CNT_ILA.ngc"...
+Loading design module "ipcore_dir/CNT_VIO.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "counter_scope.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 158404 kilobytes
+
+Writing NGD file "counter_scope.ngd" ...
+Total REAL time to NGDBUILD completion:  7 sec
+Total CPU time to NGDBUILD completion:   7 sec
+
+Writing NGDBUILD log file "counter_scope.bld"...

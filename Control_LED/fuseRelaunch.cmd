@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/susu/Documents/mygithub/FPGA/Control_LED/tb_Control_LED_isim_beh.exe" -prj "C:/Users/susu/Documents/mygithub/FPGA/Control_LED/tb_Control_LED_beh.prj" "work.tb_Control_LED" "work.glbl" 
